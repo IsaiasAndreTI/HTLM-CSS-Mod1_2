@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover Flutuar</title>
+
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            
+        }
+
+        div > p{ /*PARAGRAFO FILHO DA DIV*/
+            display: none;/* ESSE ESCONDE*/
+        }
+
+        div:hover > p {  /*ESSE QDO PASSAR MOUSE MOSTRAR PARAGRAFO DENTRO*/
+            display: block; 
+            color: white;
+            background-color: red;
+            width: 155px;
+        }
+
+        div:hover{  /*QDO EU PASSAR O MOUSE MUDAR A COR PRA RED*/
+             color: red; 
+
+        }
+
+    </style>
+</head>
+<body>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+        </div>
+        <p>Fim do exemplo</p>
+
+    
+
+</body>
+</html>
