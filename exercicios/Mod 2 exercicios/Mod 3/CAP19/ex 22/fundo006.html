@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            height: 97vh;
-            background-color: black;
-            background-image: url('Imagens/wallpaper002.jpg');
+            height: 97vh;     
+            /* background-color: black; */ /*cor de fundo caso o browser demore pra responder... não aparece em branco*/
+            /* background-image: url('Imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat:repeat-y;
-            background-size: cover; /* usar sempre*/
+            background-repeat:no-repeat;
+            background-size: cover;  */
+            
+            /* usar sempre pois permite não limitar a img de fundo*/
+           /* background-attachment:fixed; */ /*faz rolar o conteúdo sem o fundo, se fosse scroll rolaria tudo*/
+  
+            
 
+            /*assunto sobre as declarações Shorthand - background
+            usará sempre nessa ordem:
+            color > image > position > repeat > [size] attachment>
+
+            agora olha isso abaixo podemos usar apenas assim 
+            ATENÇÃO NÃO PODE USAR O COVER SIZE*/
+        
+
+             background:black url('Imagens/wallpaper002.jpg') no-repeat fixed center center; 
+            background-size:cover;
+            
+        
         }
+
+        
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;/*pode ser width tbm tanto faz.. porém max da melhor condição..*/
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
