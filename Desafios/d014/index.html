@@ -9,25 +9,116 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         table{
-            width: 300px;
+            width: 400px;
             height: 300px;
+            border-collapse: collapse;
+
         }
 
         th, td{
             border: 1px solid black;
+            text-align: center;
+            
         }
+
+        .tituloP{
+            background-color: rgba(105, 105, 105, 0.786);
+            color: white;
+            padding: 20px;
+        }
+
+        .titulopnota{
+            background-color: rgba(105, 105, 105, 0.786);
+            color: white;
+            padding: 2px;
+
+        }
+
+        .titulos{
+            background-color: rgba(105, 105, 105, 0.786);
+            color: white;
+        }
+        #notas{
+            background-color: rgba(105, 105, 105, 0.786);
+            color: white;
+            padding-inline: 5px;
+
+        }
+
 
     </style>
 </head>
 <body>
-
     <table>
-        <tr>
-            <th> Area</th>
-        </tr>
+        <thead>
+            <th class="tituloP" rowspan="2">Área</th>
+            <th class="tituloP" rowspan="2">Disciplinas</th>
+            <th class="titulopnota" colspan="2">Notas</th>
+            <th class="tituloP" rowspan="2">Média</th>
+            <tr>
+                <th id="notas">Nota 1</th>
+                <th id="notas">Nota 2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td class="titulos" colspan="4">Médias de Exatas</td>
+                <td class="titulos">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td class="titulos" colspan="4">Média de Humanas</td>
+                <td class="titulos">0.0</td>
+            </tr>
+        </tbody>
+        
         
     </table>
     
