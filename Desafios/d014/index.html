@@ -46,23 +46,25 @@
             background-color: rgba(105, 105, 105, 0.786);
             color: white;
         }
+       
+        
+
         #notas{
             background-color: rgba(105, 105, 105, 0.786);
             color: white;
-            padding-inline: 2,5px;
+            height: 45px;            
 
         }
-
 
     </style>
 </head>
 <body>
     <table>
         <thead>
-            <th class="tituloP" rowspan="2">Área</th>
-            <th class="tituloP" rowspan="2">Disciplinas</th>
-            <th class="titulopnota" colspan="2">Notas</th>
-            <th class="tituloP" rowspan="2">Média</th>
+            <th class="tituloP" rowspan="2" scope="rowgroup">Área</th>
+            <th class="tituloP" rowspan="2" scope="rowgroup">Disciplinas</th>
+            <th class="titulopnota" colspan="2" scope="colgroup">Notas</th>
+            <th class="tituloP" rowspan="2" scope="rowgroup">Média</th>
             <tr>
                 
                 <th id="notas">Nota 1</th>
@@ -101,7 +103,7 @@
                 <td class="titulos">0.0</td>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td>0.0</td>
                 <td>0.0</td>
