@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+
+            width: 95vw;
+            height: 400px;
+            border-radius: 10px;
+            border: 2px solid black;
+
+        }
+     
+        ul {
+  display:inline-block;
+  color: brown ;
+  list-style-type:square;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+ 
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus vitae quod quis sapiente voluptatibus obcaecati, velit omnis! Dolore neque delectus libero ipsum maiores temporibus id ducimus. Dolore natus laboriosam deleniti!
+    </p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+
+    </ul>
+
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet vero quisquam obcaecati incidunt, esse ipsum. Earum dignissimos quam, quo est quae corporis ad nemo ab deleniti assumenda nesciunt minima rem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum veritatis itaque. Porro, ipsa saepe ullam distinctio voluptatum repudiandae perferendis quia tempore rerum, quam odio maiores, officia exercitationem. Consectetur, labore.
+    </p>
+    <iframe id="tela" name="frame" src="paginas-extras/pag003.html" ><p>Infelizmente o seu navegador não é compatível com isso!</p></iframe>
+</body>
+</html>
