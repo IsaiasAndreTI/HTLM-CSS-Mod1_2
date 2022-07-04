@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+
+    <h1>Meu site principal</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta accusamus voluptate, quidem reiciendis minima magni atque dolore libero laborum, facere voluptates praesentium labore officiis totam, exercitationem iure explicabo corporis?</p>
+
+    <!-- MODELO SEGURO SEM ACESSO
+        
+        <iframe src="paginas-extras/pag004.html" sandbox="sandbox">
+        [Seu navegador não é compatível com isso!]
+    </iframe> -->
+
+    <!--Modelo abaixo seguro mais funcionando a caixa e com permissões específicas-->
+
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        [Seu navegador não é compatível com isso!]
+    </iframe>
+
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit quos perspiciatis ipsam recusandae natus quam, asperiores laborum iusto voluptatem adipisci, velit consectetur deleniti obcaecati magni numquam quaerat tenetur? Velit, delectus.</p>
+    
+</body>
+</html>
